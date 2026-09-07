@@ -29,15 +29,11 @@ function startGame (tree) {
     decisionContainer.append(noButton);
     
     decisionButtons = document.querySelectorAll(".decision");
-    let isGuessing = true;
     let current = tree;
     question.textContent = current.question;
     
     decisionButtons.forEach(button => {
         button.addEventListener("click", event => {
-            if (!isGuessing) {
-                return;
-            }
             current = current[event.target.id];
             question.textContent = current.question;
             
