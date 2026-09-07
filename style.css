@@ -68,11 +68,11 @@ a {
 }
 
 
-#start, .decision:hover {
+#start:hover, .decision:hover {
     background-color: color-mix(in srgb, var(--brilliant-azure), black 10%);
 }
 
-#start, .decision:active {
+#start:active, .decision:active {
     background-color: color-mix(in srgb, var(--brilliant-azure), black 20%);
 }
 
