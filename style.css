@@ -1,0 +1,99 @@
+@font-face {
+    src: url('alte_haas_grotesk/AlteHaasGroteskRegular.ttf');
+    font-family: myFont;
+    font-weight: regular;
+}
+
+@font-face {
+    src: url('alte_haas_grotesk/AlteHaasGroteskBold.ttf');
+    font-family: myFont;
+    font-weight: bold;
+}
+
+:root  {
+    --malachite: #04e762ff;
+    --amber-flame: #f5b700ff;
+    --fuchsia-flame: #dc0073ff;
+    --brilliant-azure: #008bf8ff;
+    --lime-flash: #89fc00ff;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: myFont;
+    background-color: var(--lime-flash);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fuchsia-flame);
+    width: 400px;
+    height: 400px;
+    border-radius: 25px;
+}
+
+h1 {
+    font-style: italic;
+    color: var(--amber-flame);
+}
+
+p {
+    text-align: center;
+    color: var(--amber-flame);
+}
+
+a {
+    color: color-mix(in srgb, var(--amber-flame), white 20%);
+}
+
+#question {
+    color: var(--amber-flame);
+}
+
+#start {
+    font-family: myFont;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--brilliant-azure);
+}
+
+
+#start, .decision:hover {
+    background-color: color-mix(in srgb, var(--brilliant-azure), black 10%);
+}
+
+#start, .decision:active {
+    background-color: color-mix(in srgb, var(--brilliant-azure), black 20%);
+}
+
+.decision {
+    width: 100px;
+    font-family: myFont;
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding: 10px;
+    border: none;
+    background-color: var(--brilliant-azure);
+}
+
+.decision-container {
+    display: flex;
+    gap: 8px;
+}
+
+#yes {
+    border-radius: 100px 0px 0px 100px;
+}
+
+#no {
+    border-radius: 0px 100px 100px 0px;
+}

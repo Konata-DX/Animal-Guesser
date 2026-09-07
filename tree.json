@@ -1,0 +1,256 @@
+{
+    "type": "decision",
+    "question": "Is it a mammal?",
+    "yes": {
+        "type": "decision",
+        "question": "Does it fly?",
+        "yes": {
+            "type": "leaf",
+            "animal": "Bat"
+        },
+        "no": {
+            "type": "decision",
+            "question": "Does it live at sea?",
+            "yes": {
+                "type": "decision",
+                "question": "Is it usually longer than a car?",
+                "yes": {
+                    "type": "leaf",
+                    "animal": "Whale"
+                },
+                "no": {
+                    "type": "leaf",
+                    "animal": "Dolphin"
+                }
+            },
+            "no": {
+                "type": "decision",
+                "question": "Does it walk on 2 legs?",
+                "yes": {
+                    "type": "decision",
+                    "question": "Is it a person?",
+                    "yes": {
+                        "type": "leaf",
+                        "animal": "Human"
+                    },
+                    "no": {
+                        "type": "leaf",
+                        "animal": "Kangaroo"
+                    }
+                },
+                "no": {
+                    "type": "decision",
+                    "question": "Is it very small?",
+                    "yes": {
+                        "type": "leaf",
+                        "animal": "Mouse"
+                    },
+                    "no": {
+                        "type": "decision",
+                        "question": "Does it have a trunk?",
+                        "yes": {
+                            "type": "leaf",
+                            "animal": "Elephant"
+                        },
+                        "no": {
+                            "type": "decision",
+                            "question": "Is it commonly kept as a pet?",
+                            "yes": {
+                                "type": "decision",
+                                "question": "Does it have whiskers?",
+                                "yes": {
+                                    "type": "leaf",
+                                    "animal": "Cat"
+                                },
+                                "no": {
+                                    "type": "leaf",
+                                    "animal": "Dog"
+                                }
+                            },
+                            "no": {
+                                "type": "decision",
+                                "question": "Is it commonly found on a farm?",
+                                "yes": {
+                                    "type": "decision",
+                                    "question": "Does it have hooves?",
+                                    "yes": {
+                                        "type": "leaf",
+                                        "animal": "Horse"
+                                    },
+                                    "no": {
+                                        "type": "leaf",
+                                        "animal": "Cow"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "no": {
+        "type": "decision",
+        "question": "Is it a bird?",
+        "yes": {
+            "type": "decision",
+            "question": "Can it fly?",
+            "yes": {
+                "type": "leaf",
+                "animal": "Eagle"
+            },
+            "no": {
+                "type": "decision",
+                "question": "Does it live on ice?",
+                "yes": {
+                    "type": "leaf",
+                    "animal": "Penguin"
+                },
+                "no": {
+                    "type": "decision",
+                    "question": "Is it commonly found on a farm?",
+                    "yes": {
+                        "type": "leaf",
+                        "animal": "Chicken"
+                    },
+                    "no": {
+                        "type": "leaf",
+                        "animal": "Duck"
+                    }
+                }
+            }
+        },
+        "no": {
+            "type": "decision",
+            "question": "Is it an insect?",
+            "yes": {
+                "type": "decision",
+                "question": "Does it have wings?",
+                "yes": {
+                    "type": "decision",
+                    "question": "Does it sting?",
+                    "yes": {
+                        "type": "leaf",
+                        "animal": "Bee"
+                    },
+                    "no": {
+                        "type": "decision",
+                        "question": "Does it have colorful wings?",
+                        "yes": {
+                            "type": "leaf",
+                            "animal": "Butterfly"
+                        },
+                        "no": {
+                            "type": "leaf",
+                            "animal": "Beetle"
+                        }
+                    }
+                },
+                "no": {
+                    "type": "leaf",
+                    "animal": "Ant"
+                }
+            },
+            "no": {
+                "type": "decision",
+                "question": "Does it have scales?",
+                "yes": {
+                    "type": "decision",
+                    "question": "Does it live mostly in water?",
+                    "yes": {
+                        "type": "decision",
+                        "question": "Does it have fins?",
+                        "yes": {
+                            "type": "decision",
+                            "question": "Does it have a long, pointed snout?",
+                            "yes": {
+                                "type": "leaf",
+                                "animal": "Shark"
+                            },
+                            "no": {
+                                "type": "leaf",
+                                "animal": "Salmon"
+                            }
+                        },
+                        "no": {
+                            "type": "decision",
+                            "question": "Does it have a hard shell?",
+                            "yes": {
+                                "type": "leaf",
+                                "animal": "Turtle"
+                            },
+                            "no": {
+                                "type": "decision",
+                                "question": "Does it have short legs?",
+                                "yes": {
+                                    "type": "leaf",
+                                    "animal": "Crocodile"
+                                },
+                                "no": {
+                                    "type": "leaf",
+                                    "animal": "Snake"
+                                }
+                            }
+                        }
+                    },
+                    "no": {
+                        "type": "decision",
+                        "question": "Does it have 4 legs?",
+                        "yes": {
+                            "type": "leaf",
+                            "animal": "Lizard"
+                        },
+                        "no": {
+                            "type": "leaf",
+                            "animal": "Frog"
+                        }
+                    }
+                },
+                "no": {
+                    "type": "decision",
+                    "question": "Does it have 8 legs?",
+                    "yes": {
+                        "type": "leaf",
+                        "animal": "Spider"
+                    },
+                    "no": {
+                        "type": "decision",
+                        "question": "Does it live in the ocean?",
+                        "yes": {
+                            "type": "decision",
+                            "question": "Does it have tentacles?",
+                            "yes": {
+                                "type": "decision",
+                                "question": "Does it have a round, jelly-like body?",
+                                "yes": {
+                                    "type": "leaf",
+                                    "animal": "Jellyfish"
+                                },
+                                "no": {
+                                    "type": "leaf",
+                                    "animal": "Octopus"
+                                }
+                            },
+                            "no": {
+                                "type": "leaf",
+                                "animal": "Crab"
+                            }
+                        },
+                        "no": {
+                            "type": "decision",
+                            "question": "Does it have a shell?",
+                            "yes": {
+                                "type": "leaf",
+                                "animal": "Snail"
+                            },
+                            "no": {
+                                "type": "leaf",
+                                "animal": "Earthworm"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
