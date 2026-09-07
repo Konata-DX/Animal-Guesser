@@ -39,17 +39,12 @@ function startGame (tree) {
                 return;
             }
             current = current[event.target.id];
+            question.textContent = current.question;
             
-            switch (current.type) {
-                    case "decision":
-                        question.textContent = current.question
-                        break;
-                    case "leaf":
-                        question.textContent = `Your animal is: ${current.animal} | Refresh this page to play again`;
-                        yesButton.remove();
-                        noButton.remove();
-                        isGuessing = false;
-                        break;
+            if (current.type === "leaf") {
+                question.textContent = `Your animal is: ${current.animal} | Refresh this page to play again`;
+                yesButton.remove();
+                noButton.remove();
             }
         });
     });
