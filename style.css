@@ -70,6 +70,7 @@ a {
 
 #start:hover, .decision:hover {
     background-color: color-mix(in srgb, var(--brilliant-azure), black 10%);
+    cursor: pointer;
 }
 
 #start:active, .decision:active {
